@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Task2 {
@@ -13,7 +12,7 @@ public class Task2 {
 
         for (int i = 1; i <= size; i++) {
 
-            System.out.println("Enter a number: [" + i +"/"+size+ "] ");
+            System.out.println("Enter a number: [" + i + "/" + size + "] ");
             int input = scanner.nextInt();
             numbers[i - 1] = input;
 
