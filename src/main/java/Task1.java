@@ -15,25 +15,18 @@ public class Task1 {
             if (number == numberToGuess) {
                 System.out.println("You guessed it!");
                 break;
-            } else if (number < numberToGuess && i != 0) {
-
+            }
+            if (number < numberToGuess && i != 0) {
                 System.out.println("Your number is LOWER than the one you are trying to guess");
-                System.out.println("You have " + i + " moves left");
-                System.out.println("Please try again");
-            } else if (number > numberToGuess && i != 0) {
-
+            } else {
                 System.out.println("Your number is GREATER than the one you are trying to guess");
-                System.out.println("You have " + i + " moves left");
-                System.out.println("Please try again");
             }
             if (i == 0) {
-
                 System.out.println("Sorry you didn't guess the number, the answer was: " + numberToGuess);
+                break;
             }
+            System.out.println("You have " + i + " moves left");
+            System.out.println("Please try again");
         }
-
-
     }
-
-
 }

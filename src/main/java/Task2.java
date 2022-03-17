@@ -16,17 +16,17 @@ public class Task2 {
             int input = scanner.nextInt();
             numbers[i - 1] = input;
 
-            if (i == 1) max = input;
-            if (input > max) max = input;
-
+            if (i == 1) {
+                max = input;
+            }
+            if (input > max) {
+                max = input;
+            }
         }
-
         for (int number : numbers) {
             sum += number;
         }
-
         System.out.println("average of the numbers: " + (double) sum / size);
         System.out.println("maximum value: " + max);
-
     }
 }
